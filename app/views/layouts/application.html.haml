@@ -1,7 +1,7 @@
 !!!
 %html
 %head
-	%title Ruby on Rails Jobs
+	%title MT Jobs
 	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true
 	= csrf_meta_tags
@@ -9,7 +9,7 @@
 %body
 	%nav.navbar.navbar-default
 		.container
-			.navbar-brand Rails Jobs
+			.navbar-brand MT Jobs
 			%ul.nav.navbar-nav
 				%li= link_to "All Jobs", root_path
 				- Category.all.each do |category|
