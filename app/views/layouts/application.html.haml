@@ -9,7 +9,11 @@
 %body
 	%nav.navbar.navbar-default
 		.container
+<<<<<<< HEAD
 			= link_to "MT Jobs", root_path, class: "navbar-brand"
+=======
+			.navbar-brand MT Jobs
+>>>>>>> fccf4b03164907fc8f28ae02590a20d96183104b
 			#links
 				= link_to "New Job", new_job_path, class: "navbar-text navbar-left navbar-link"
 			%ul.nav.navbar-nav
@@ -24,9 +28,12 @@
 	.container
 		.col-md-6.col-md-offset-3
 			= yield
+<<<<<<< HEAD
 
 %footer#main_footer
 	%p.copyright
 	Fork me on
 	= succeed "!" do
 		%a.link-accent{:href => "https://github.com/juniorabranches/jobs_board", :target => "_blank"} Github
+=======
+>>>>>>> fccf4b03164907fc8f28ae02590a20d96183104b

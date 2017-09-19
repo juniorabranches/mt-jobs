@@ -17,11 +17,14 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+<<<<<<< HEAD
 
  $highlight: #8bc6db;
  $border: #E9E9E9;
  $primary: #1D976C;
 
+=======
+>>>>>>> fccf4b03164907fc8f28ae02590a20d96183104b
  * {
  	box-sizing: border-box;
  }
@@ -32,11 +35,19 @@
 
  body {
  	height: 100%;
+<<<<<<< HEAD
    background: -webkit-linear-gradient(90deg, $primary 10%, #93F9B9 90%);
    background:    -moz-linear-gradient(90deg, $primary 10%, #93F9B9 90%);
    background:     -ms-linear-gradient(90deg, $primary 10%, #93F9B9 90%);
    background:      -o-linear-gradient(90deg, $primary 10%, #93F9B9 90%);
    background:         linear-gradient(90deg, $primary 10%, #93F9B9 90%);
+=======
+   background: -webkit-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+   background:    -moz-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+   background:     -ms-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+   background:      -o-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+   background:         linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+>>>>>>> fccf4b03164907fc8f28ae02590a20d96183104b
    font-family: 'Lato', sans-serif;
  }
 
@@ -63,7 +74,11 @@
  	letter-spacing: -1px;
  	font-size: 2em;
  	font-weight: 300;
+<<<<<<< HEAD
  	color: $primary !important;
+=======
+ 	color: #1D976C !important;
+>>>>>>> fccf4b03164907fc8f28ae02590a20d96183104b
  }
 
  #jobs {
@@ -88,7 +103,11 @@
  #links {
  	margin-top: 1em;
   a:active::before {
+<<<<<<< HEAD
       background-color:  $primary;
+=======
+      background-color:  #1D976C;
+>>>>>>> fccf4b03164907fc8f28ae02590a20d96183104b
   }
   a:hover, a:focus, a:active {
       color: #999;
@@ -109,7 +128,11 @@
       font-weight: 900;
       text-transform: uppercase;
       transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+<<<<<<< HEAD
       color:  $primary;
+=======
+      color:  #1D976C;
+>>>>>>> fccf4b03164907fc8f28ae02590a20d96183104b
   }
   a::before {
       content: '';
@@ -119,7 +142,11 @@
       left: 0;
       height: 3px;
       width: 100%;
+<<<<<<< HEAD
       background-color: $primary;
+=======
+      background-color: #1D976C;
+>>>>>>> fccf4b03164907fc8f28ae02590a20d96183104b
       transform-origin: right top;
       transform: scale(0, 1);
       transition: color 0.1s,transform 0.2s ease-out;
@@ -130,6 +157,7 @@
       transform: scale(1, 1);
   }
  }
+<<<<<<< HEAD
 
  #main_footer{
    padding: 2.5em 5%;
@@ -152,3 +180,5 @@
      }
    }
  }
+=======
+>>>>>>> fccf4b03164907fc8f28ae02590a20d96183104b
