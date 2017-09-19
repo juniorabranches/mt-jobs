@@ -1,0 +1,32 @@
+!!!
+%html
+%head
+	%title MT Jobs
+	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+	= javascript_include_tag 'application', 'data-turbolinks-track' => true
+	= csrf_meta_tags
+
+%body
+	%nav.navbar.navbar-default
+		.container
+			= link_to "MT Jobs", root_path, class: "navbar-brand"
+			#links
+				= link_to "New Job", new_job_path, class: "navbar-text navbar-left navbar-link"
+			%ul.nav.navbar-nav
+				%li= link_to "All Jobs", root_path
+				- Category.all.each do |category|
+					%li= link_to category.name, jobs_path(category: category.name)
+			#links
+				- if !user_signed_in?
+					= link_to "Login", new_user_session_path, class: "navbar-text navbar-right navbar-link"
+				- if user_signed_in?
+					= link_to "Logout", destroy_user_session_path, method: :delete, class: "navbar-text navbar-right navbar-link"
+	.container
+		.col-md-6.col-md-offset-3
+			= yield
+
+%footer#main_footer
+	%p.copyright
+	Fork me on
+	= succeed "!" do
+		%a.link-accent{:href => "https://github.com/juniorabranches/blog_abranches", :target => "_blank"} Github
