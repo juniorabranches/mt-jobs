@@ -1,3 +1,6 @@
-- @jobs.each do |job|
-			%h1= link_to job.title, job
+#jobs
+	- @jobs.each do |job|
+		.job
+			%h2= link_to job.title, job
+			%p= job.description
 			%p= job.company
