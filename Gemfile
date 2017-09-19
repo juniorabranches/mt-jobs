@@ -20,6 +20,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'simple_form', '~> 3.5'
 gem 'haml', '~> 5.0', '>= 5.0.3'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'bcrypt', '~> 3.1.1', :require => 'bcrypt'
+
+gem 'devise'
 
   gem 'sqlite3', group: :development # Added development group.
   gem 'pg', group: :production # Added postgres and made it production only.
