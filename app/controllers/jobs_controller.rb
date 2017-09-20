@@ -21,8 +21,9 @@ class JobsController < ApplicationController
   	def create
   		@job = Job.new(jobs_params)
 
-  		if @job.save
-  			redirect_to @job
+  		if @job.save    
+  			SendJobMailer.send_job_mailer(@job).deliver
+  			redirect_to(@job, :notice => 'Job Created')
   		else
   			render "New"
   		end
